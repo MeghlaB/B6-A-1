@@ -1,4 +1,4 @@
-**1. Interface vs Type**
+**1.What are some differences between interfaces and types in TypeScript?**
 
 TypeScript-এ interface এবং type দুটোই কোনো object-এর structure বা data-এর structure নির্ধারণ করতে ব্যবহার হয়। তবে এদের মধ্যে কিছু গুরুত্বপূর্ণ পার্থক্য আছে।
 
@@ -20,7 +20,7 @@ interface A { name: string }
 interface B extends A { age: number }
 ```
 
-**2. Example of Intersection and Union Types**
+**2.Provide an example of using union and intersection types in TypeScript.**
 
 //Union Type
 

@@ -14,9 +14,6 @@ const formatValue = (value: multiType):multiType => {
 
 
 
-
-
-
 const getLength = (value: string | number[]): number => {
     if (typeof value === 'string') {
         return value.length
@@ -29,17 +26,13 @@ const getLength = (value: string | number[]): number => {
 
 
 
-
-
 class Person {
     name: string;
     age: number;
     constructor(name: string, age: number) {
         this.name = name,
             this.age = age
-
     }
-
     getDetails(): string {
         return `'Name: ${this.name}, Age: ${this.age}'`
     }
@@ -62,8 +55,6 @@ function filterByRating(booksItems: Items[]): Items[] {
         )
 
 }
-
-
 
 
 
@@ -94,10 +85,13 @@ interface Book {
     isAvailable: boolean
 
 }
-
-const printBookDetails = (book: Book): string => {
-    return `Title:${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable}`
+const printBookDetails = (book: Book) => {
+    console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable}`) 
 }
+
+
+
+
 
 
 
@@ -123,6 +117,8 @@ const getUniqueValues = (arr1: generic, arr2: generic): generic => {
 
     return newArray;
 }
+
+
 
 
 
